@@ -1061,6 +1061,7 @@ export default class ChatRoom extends Listenable {
         }
 
         if (txt) {
+            console.log(txt);
             if (type === 'chat') {
                 this.eventEmitter.emit(XMPPEvents.PRIVATE_MESSAGE_RECEIVED,
                         from, nick, txt, this.myroomjid, stamp);
